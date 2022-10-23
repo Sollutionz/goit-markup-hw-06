@@ -410,38 +410,56 @@
           <ul class="modal-list">
             <li>
               <label class="modal-label">
-                Ім'я
-                <input type="name" />
+                <span class="modal-span">Ім'я</span>
+                <div class="modal-possition">
+                  <input class="modal-input" type="name" />
+                  <svg width="18px" height="18px" class="modal-icon">
+                    <use href="./images/icons.svg#icon-person-black"></use>
+                  </svg>
+                </div>
               </label>
             </li>
             <li>
               <label class="modal-label">
-                Телефон
-                <input type="tel" />
+                <span class="modal-span">Телефон</span>
+                <div class="modal-possition">
+                  <input class="modal-input" type="tel" />
+                  <svg width="18px" height="18px" class="modal-icon">
+                    <use href="./images/icons.svg#icon-phone-black"></use>
+                  </svg>
+                </div>
               </label>
             </li>
             <li>
               <label class="modal-label">
-                Пошта
-                <input type="email" />
+                <span class="modal-span">Пошта</span>
+                <div class="modal-possition">
+                  <input class="modal-input" type="email" />
+                  <svg width="18px" height="18px" class="modal-icon">
+                    <use href="./images/icons.svg#icon-email-black"></use>
+                  </svg>
+                </div>
               </label>
             </li>
             <li>
               <label class="modal-label">
-                Коментар
+                <span class="modal-span"> Коментар</span>
                 <textarea
                   class="feedback"
                   name="feedback"
-                  cols="30"
-                  rows="10"
                   placeholder="Введіть текст"
                 ></textarea>
               </label>
             </li>
           </ul>
-          <input class="" type="checkbox" />
-          <span class="polycy-text"> Погоджуюся з розсилкою та приймаю </span>
-          <a href="" class="polycy">Умови договору</a>
+          <label class="modal-check-label">
+            <input class="modal-check" type="checkbox" />
+            <svg width="16" height="15px" class="modal-style-check">
+              <use href="./images/icons.svg#icon-icon-check"></use>
+            </svg>
+            <span class="polycy-text"> Погоджуюся з розсилкою та приймаю </span>
+            <a href="" class="polycy">Умови договору</a>
+          </label>
           <button class="modal-subm" type="submit">Відправити</button>
           <button class="btn" data-modal-close>
             <img src="./images/close.svg" alt="close" />
@@ -519,7 +537,12 @@
                 name="emeil"
                 placeholder="E-mail"
               />
-              <button type="submit">Підписатися</button>
+              <button class="submit" type="submit">
+                Підписатися
+                <svg class="footer-icon-send" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
             </label>
           </div>
         </div>
