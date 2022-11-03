@@ -734,6 +734,7 @@ ul {
 }
 
 .modal-possition {
+  display: block;
   position: relative;
 }
 
